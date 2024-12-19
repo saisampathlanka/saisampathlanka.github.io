@@ -12,6 +12,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            .blinking-text {
+                animation: blink 2s infinite;
+            }
+
+            @keyframes blink {
+                0%, 100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+            }
+        </style>
     </head>
 
     <body class="bg-gray-100">
@@ -51,7 +65,9 @@
         <section class="py-10 md:py-16">
             <div class="container max-w-screen-xl mx-auto px-4">
                 <p class="font-medium text-gray-700 text-xs md:text-xl text-center">
+                    <span class="blinking-text text-3xl">"</span>
                     I’m Lanka Sai Sampath, a Software Engineer with over a year of experience in frontend and backend development. My passion lies in building accessible, scalable, and user-centric applications using modern frameworks like Vue.js, React.js, and Tailwind CSS.
+                    <span class="blinking-text text-3xl">"</span>
                 </p>
             </div>
         </section>
@@ -123,7 +139,7 @@
                                 <div class="relative">
                                     <a href="https://github.com/saisampathlanka/E-Commerce">
                                         <h6 class="font-semibold text-gray-500 text-md relative z-10">Checkout my Project</h6>
-                                        <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
+                                        <span class="w-32 h-1 bg-blue-300 absolute bottom-1 left-0 z-0"></span>
                                     </a>
                                 </div>
                             </div>
@@ -143,7 +159,7 @@
                                 <div class="relative">
                                     <a href="https://github.com/saisampathlanka/JobJunction">
                                         <h6 class="font-semibold text-gray-500 text-md relative z-10">Checkout my Project</h6>
-                                        <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
+                                        <span class="w-32 h-1 bg-blue-300 absolute bottom-1 left-0 z-0"></span>
                                     </a>
                                 </div>
                             </div>
@@ -165,16 +181,13 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
+                            <i data-feather="book-open"></i>
+                        </div>
+
                         <h4 class="font-medium text-gray-700 text-lg mb-4">2019 – 2023</h4>
 
                         <p class="font-normal text-gray-500 text-md mb-4">Completed my Bachelors Degree in <b>Mechanical Engineering</b> at Vignans Institute of Information Technology at Visakhapatnam.</p>
-
-                        <div class="relative">
-                            <a href="https://vignaniit.edu.in/">
-                                <h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6>
-                                <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
-                            </a>
-                        </div>
                     </div>
                 </div>
 
